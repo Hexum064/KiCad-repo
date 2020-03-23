@@ -40,7 +40,7 @@ L device:POT RV1
 U 1 1 5E2D1D26
 P 5650 3800
 F 0 "RV1" V 5475 3800 50  0000 C CNN
-F 1 "POT" V 5550 3800 50  0000 C CNN
+F 1 "5K POT" V 5550 3800 50  0000 C CNN
 F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 5650 3800 50  0001 C CNN
 F 3 "" H 5650 3800 50  0001 C CNN
 	1    5650 3800
@@ -808,35 +808,15 @@ Wire Wire Line
 Wire Wire Line
 	6850 4000 6850 3650
 Wire Wire Line
-	6850 3650 6950 3650
-Wire Wire Line
-	6950 3650 6950 3150
-Wire Wire Line
-	7050 3150 7050 3700
-Wire Wire Line
-	7050 3700 6950 3700
-Wire Wire Line
 	6950 3700 6950 4000
 Wire Wire Line
 	7050 4000 7050 3750
-Wire Wire Line
-	7050 3750 7150 3750
-Wire Wire Line
-	7150 3750 7150 3150
-Wire Wire Line
-	7250 3150 7250 3800
-Wire Wire Line
-	7250 3800 7150 3800
 Wire Wire Line
 	7150 3800 7150 4000
 Wire Wire Line
 	7850 3150 7850 3300
 Wire Wire Line
-	7750 3150 7750 3650
-Wire Wire Line
 	7750 3650 8050 3650
-Wire Wire Line
-	8050 3650 8050 3050
 Wire Wire Line
 	7350 5550 7350 5400
 Wire Wire Line
@@ -896,14 +876,6 @@ Wire Wire Line
 	6550 3800 5800 3800
 Wire Wire Line
 	6550 3150 6550 3800
-Wire Wire Line
-	5700 5700 5400 5700
-Wire Wire Line
-	5700 4950 5700 5700
-Wire Wire Line
-	5800 5900 5400 5900
-Wire Wire Line
-	5800 5050 5800 5900
 Wire Wire Line
 	2800 7650 2950 7650
 Wire Wire Line
@@ -1263,13 +1235,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 7950 1550 8650
 Wire Wire Line
-	5700 4950 1350 4950
-Wire Wire Line
-	1350 4950 1350 7750
-Wire Wire Line
 	1450 7650 1450 5050
-Wire Wire Line
-	1450 5050 5800 5050
 Connection ~ 1550 10750
 Connection ~ 1450 8050
 Wire Wire Line
@@ -1699,4 +1665,83 @@ Wire Wire Line
 Connection ~ 1750 10450
 Wire Wire Line
 	1750 10450 1750 11150
+$Comp
+L device:R R3
+U 1 1 5E3FCF83
+P 8050 3400
+F 0 "R3" V 8130 3400 50  0000 C CNN
+F 1 "1K" V 8050 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7980 3400 50  0001 C CNN
+F 3 "" H 8050 3400 50  0001 C CNN
+	1    8050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3650 7750 3150
+Wire Wire Line
+	8050 3550 8050 3650
+Wire Wire Line
+	8050 3050 8050 3250
+Wire Wire Line
+	1350 4950 1350 7750
+Wire Wire Line
+	1450 5050 5500 5050
+Wire Wire Line
+	5500 5050 5500 5700
+Wire Wire Line
+	5500 5700 5400 5700
+Wire Wire Line
+	5400 5900 5550 5900
+Wire Wire Line
+	5550 5900 5550 4950
+Wire Wire Line
+	5550 4950 1350 4950
+Text GLabel 6350 2800 1    50   Input ~ 0
+VSS
+Text GLabel 6450 2800 1    50   Input ~ 0
+VDD
+Text GLabel 6550 2800 1    50   Input ~ 0
+V0
+Text GLabel 6650 2800 1    50   Input ~ 0
+RS
+Text GLabel 6750 2800 1    50   Input ~ 0
+RW
+Text GLabel 6850 2800 1    50   Input ~ 0
+E
+Text GLabel 6950 2800 1    50   Input ~ 0
+D0
+Text GLabel 7050 2800 1    50   Input ~ 0
+D1
+Text GLabel 7150 2800 1    50   Input ~ 0
+D2
+Text GLabel 7250 2800 1    50   Input ~ 0
+D3
+Text GLabel 7350 2800 1    50   Input ~ 0
+D4
+Text GLabel 7450 2800 1    50   Input ~ 0
+D5
+Text GLabel 7550 2800 1    50   Input ~ 0
+D6
+Text GLabel 7650 2800 1    50   Input ~ 0
+D7
+Text GLabel 7750 2800 1    50   Input ~ 0
+A
+Text GLabel 7850 2800 1    50   Input ~ 0
+K
+Wire Wire Line
+	7650 3800 7650 3150
+Wire Wire Line
+	7150 3800 7650 3800
+Wire Wire Line
+	7550 3750 7550 3150
+Wire Wire Line
+	7050 3750 7550 3750
+Wire Wire Line
+	7450 3700 7450 3150
+Wire Wire Line
+	6950 3700 7450 3700
+Wire Wire Line
+	7350 3650 7350 3150
+Wire Wire Line
+	6850 3650 7350 3650
 $EndSCHEMATC
